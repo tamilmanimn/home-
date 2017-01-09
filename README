@@ -1,0 +1,14 @@
+CREATE TABLE `member` (
+  `memberid` int(11) NOT NULL,
+  `name` varchar(100) default NULL,
+  `dob` date default NULL,
+  `mobilenumber` varchar(100) default NULL,
+  PRIMARY KEY  (`memberid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+ CREATE TABLE `salary` (
+  `memberid` int(11) default NULL,
+  `salary` varchar(100) default NULL,
+  KEY `memeberid` (`memberid`),
+  CONSTRAINT `salary_sal_1` FOREIGN KEY (`memberid`) REFERENCES `member` (`memberid`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
