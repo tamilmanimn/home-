@@ -27,8 +27,8 @@ public class homeServlet extends HttpServlet {
 
 		String operation = request.getParameter("operation");
 		if (operation.equals("addMember")) {
-			int mid = Integer.parseInt(request.getParameter("id"));
-			String mname = request.getParameter("name");
+			int mid = Integer.parseInt(request.getParameter("mid"));
+			String mname = request.getParameter("mname");
 			String dob = request.getParameter("dob");
 			String mno = request.getParameter("mno");
 			JSONObject result = new JSONObject();
@@ -45,8 +45,8 @@ public class homeServlet extends HttpServlet {
 			response.getWriter().print(result);
 
 		} else if (operation.equals("updateMember")) {
-			int mid = Integer.parseInt(request.getParameter("id"));
-			String mname = request.getParameter("name");
+			int mid = Integer.parseInt(request.getParameter("mid"));
+			String mname = request.getParameter("mname");
 			String dob = request.getParameter("dob");
 			String mno = request.getParameter("mno");
 			JSONObject result = new JSONObject();

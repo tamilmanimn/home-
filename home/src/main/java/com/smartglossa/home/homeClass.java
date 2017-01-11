@@ -83,8 +83,7 @@ public class homeClass {
 				obj.put("memberid",rs.getString("memberid"));
 				obj.put("name",rs.getString("name"));
 				obj.put("dob",rs.getString("dob"));
-				obj.put("mobilenumber",rs.getString("mobilenum`"
-						+ "ber"));
+				obj.put("mobilenumber",rs.getString("mobilenumber"));
 				result.put(obj);
 					
 			}
